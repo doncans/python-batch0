@@ -1,0 +1,9 @@
+{
+    "name":"siddhu",
+    "age":35,
+    "address":{
+        "city":"",
+        "street":"",
+        "pin code":""
+    }
+}

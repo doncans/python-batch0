@@ -1,0 +1,32 @@
+{% extends 'cal/base.html' %}
+{% block content %}
+<h1>Addition</h1>
+<form action="add" method="POST">
+    {% csrf_token %}
+    Enter first number: <input type='text', name='num1'><br>
+    Enter second number: <input type='text', name='num2'><br>
+    <input type='submit'>
+</form>
+<h1>substraction</h1>
+<form action="sub" method="POST">
+    {% csrf_token %}
+    Enter first number: <input type='text', name='num1'><br>
+    Enter second number: <input type='text', name='num2'><br>
+    <input type='submit'>
+</form>
+<h1>Multiplication</h1>
+<form action="mul" method="POST">
+    {% csrf_token %}
+    Enter first number: <input type='text', name='num1'><br>
+    Enter second number: <input type='text', name='num2'><br>
+    <input type='submit'>
+</form>
+<h1>Division</h1>
+<form action="div" method="POST">
+    {% csrf_token %}
+    Enter first number: <input type='text', name='num1'><br>
+    Enter second number: <input type='text', name='num2'><br>
+    <input type='submit'>
+</form>
+
+{% endblock %}
